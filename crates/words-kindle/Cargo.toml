@@ -1,0 +1,10 @@
+[package]
+name = "words-kindle"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+words-core.workspace = true
+words-render.workspace = true
+primitive-app.workspace = true

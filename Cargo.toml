@@ -1,0 +1,18 @@
+[workspace]
+resolver = "2"
+members = ["crates/words-core", "crates/words-render", "crates/words-kindle", "crates/words-desktop"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "PolyForm-Noncommercial-1.0.0"
+
+[workspace.dependencies]
+words-core = { path = "crates/words-core" }
+words-render = { path = "crates/words-render" }
+primitive-app = { path = "../doannt-kindle-tools/crates/primitive-app" }
+primitive-ui = { path = "../doannt-kindle-tools/crates/primitive-ui" }
+
+[profile.release]
+lto = true
+codegen-units = 1

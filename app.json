@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "id": "primitive-words",
+  "dir": "words",
+  "name": "Primitive Words",
+  "subtitle": "Five-letter puzzles for Kindle",
+  "developer": { "name": "Primitive AI" },
+  "categories": ["games"],
+  "description": "Play a daily five-letter puzzle or start a practice round.",
+  "repo": "https://github.com/DoanNguyenTrong/kindle-primitive-words",
+  "licence": "PolyForm-Noncommercial-1.0.0",
+  "source": "hosted",
+  "icon": "icon.png",
+  "changes": { "network": false, "stops_kindle_ui": false, "starts_at_boot": false, "root_filesystem": false, "hooks": false },
+  "versions": []
+}
