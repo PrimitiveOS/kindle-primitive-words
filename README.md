@@ -64,7 +64,10 @@ International (CC BY-NC-SA 4.0). [Documentation and image license](LICENSE-DOCS)
 
 ## Word banks
 
-Words uses independently selected English answer and guess banks. KWordle credits both of its English
+Words uses independently selected English answer and guess banks. The project’s original selection and arrangement
+of the bundled word banks is covered by [CC BY-NC-SA 4.0](LICENSE-DOCS) to the extent the project holds rights in it.
+
+KWordle credits both of its English
 lists to Sean Patlan, whose source repository describes them as copies of the original game's word lists and provides
 no dataset license. [KWordle credits](https://github.com/crizmo/KWordle/blob/a1f2a255ec6a69f7f916dc4e0aa382fbb7f8f742/README.md#credits),
 [English list source](https://github.com/seanpatlan/wordle-words).
