@@ -108,7 +108,7 @@ impl View {
 
 impl App for View {
     fn draw(&self, canvas: &mut Canvas) {
-        header(canvas, "Primitive Words", "Done");
+        header(canvas, "Words", "Done");
         let round = self.game.active();
         canvas.button(
             Self::rect(40, 160, 360, 100),

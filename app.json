@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "primitive-words",
   "dir": "words",
-  "name": "Primitive Words",
+  "name": "Words",
   "subtitle": "Five-letter puzzles for Kindle",
   "developer": { "name": "Primitive AI" },
   "categories": ["games"],

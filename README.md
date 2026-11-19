@@ -1,6 +1,6 @@
 <div align="center">
 
-# Primitive Words
+# Words
 
 **A five-letter word puzzle for Kindle e-readers.**
 
@@ -34,7 +34,7 @@ letters absent from the answer. Play the daily puzzle or start a separate Free p
 ## Quick start
 
 Copy the `words` and `documents` folders from the local ARMHF package to your Kindle over USB, then eject and open
-**Primitive Words** from Primitive Launcher. The app uses the fonts installed by Launcher. [Install guide](INSTALL.md)
+**Words** from Primitive Launcher. The app uses the fonts installed by Launcher. [Install guide](INSTALL.md)
 
 ## Status
 
@@ -62,7 +62,7 @@ International (CC BY-NC-SA 4.0). [Documentation and image license](LICENSE-DOCS)
 
 ## Word banks
 
-Primitive Words uses independently selected English answer and guess banks. KWordle credits both of its English
+Words uses independently selected English answer and guess banks. KWordle credits both of its English
 lists to Sean Patlan, whose source repository describes them as copies of the original game's word lists and provides
 no dataset license. [KWordle credits](https://github.com/crizmo/KWordle/blob/a1f2a255ec6a69f7f916dc4e0aa382fbb7f8f742/README.md#credits),
 [English list source](https://github.com/seanpatlan/wordle-words).
