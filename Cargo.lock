@@ -449,11 +449,10 @@ name = "kl-kindle"
 version = "0.1.0"
 dependencies = [
  "kl-core",
- "kl-render",
  "kl-store",
- "libc",
- "primitive-quick",
- "serde_json",
+ "primitive-device",
+ "primitive-eink",
+ "primitive-input",
 ]
 
 [[package]]
@@ -674,6 +673,34 @@ dependencies = [
  "kl-kindle",
  "png",
  "primitive-ui",
+]
+
+[[package]]
+name = "primitive-device"
+version = "0.1.0"
+dependencies = [
+ "kl-core",
+ "libc",
+ "primitive-quick",
+]
+
+[[package]]
+name = "primitive-eink"
+version = "0.1.0"
+dependencies = [
+ "kl-core",
+ "kl-render",
+ "libc",
+ "primitive-device",
+]
+
+[[package]]
+name = "primitive-input"
+version = "0.1.0"
+dependencies = [
+ "kl-core",
+ "libc",
+ "primitive-device",
 ]
 
 [[package]]
