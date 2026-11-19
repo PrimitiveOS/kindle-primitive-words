@@ -86,18 +86,22 @@ impl View {
         Change::Partial
     }
 
-    fn draw_mark(canvas: &mut Canvas, bounds: Rect, mark: Mark) {
+    fn draw_mark(canvas: &mut Canvas, bounds: Rect, mark: Mark, pressed: bool) {
         let size = 15.min(bounds.w).min(bounds.h);
         let x = bounds.x + (bounds.w - size) / 2;
         let y = bounds.y + (bounds.h - size) / 2;
         let dot = Rect::new(x, y, size, size);
+        let ink = if pressed { 255 } else { 0 };
         match mark {
-            Mark::Placed => canvas.circle(dot, 0),
+            Mark::Placed => canvas.circle(dot, ink),
             Mark::Present => {
-                canvas.circle(dot, 0);
-                canvas.circle(dot.inset(3), 255);
+                canvas.circle(dot, ink);
+                canvas.circle(dot.inset(3), if pressed { 17 } else { 255 });
             }
-            Mark::Absent => canvas.fill(Rect::new(x, y + size / 2, size, 3), 85),
+            Mark::Absent => canvas.fill(
+                Rect::new(x, y + size / 2, size, 3),
+                if pressed { 180 } else { 85 },
+            ),
         }
     }
 }
@@ -132,7 +136,7 @@ impl App for View {
         .enumerate()
         {
             let x = 40 + 250 * i as i32;
-            Self::draw_mark(canvas, Self::rect(x, 275, 30, 42), mark);
+            Self::draw_mark(canvas, Self::rect(x, 275, 30, 42), mark, false);
             canvas.text(Self::rect(x + 32, 275, 210, 50), label, CAPTION);
         }
         for i in 0..LIMIT {
@@ -162,7 +166,12 @@ impl App for View {
                     TextStyle::new(44).bold().center(),
                 );
                 if let Some(row_marks) = row_marks {
-                    Self::draw_mark(canvas, Self::rect(x, y + 52, 90, 30), row_marks[column]);
+                    Self::draw_mark(
+                        canvas,
+                        Self::rect(x, y + 52, 90, 30),
+                        row_marks[column],
+                        false,
+                    );
                 }
             }
             canvas.fill(Self::rect(160, y + 85, 1004, 2), 200);
@@ -210,10 +219,12 @@ impl App for View {
                     continue;
                 };
                 if let Some(mark) = keyboard_marks.get(&(letter as u8)) {
+                    let pressed = canvas.is_control_pressed(rect);
                     Self::draw_mark(
                         canvas,
                         Rect::new(rect.right() - 26, rect.bottom() - 33, 21, 21),
                         *mark,
+                        pressed,
                     );
                 }
             }
