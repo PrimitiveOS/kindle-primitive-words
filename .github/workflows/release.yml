@@ -6,10 +6,10 @@ jobs:
   release:
     permissions:
       contents: write
-    uses: DoanNguyenTrong/kindle-primitive-build/.github/workflows/package.yml@v1
+    uses: DoanNguyenTrong/kindle-primitive-build/.github/workflows/package.yml@9533d481058f4d67b29568f40b30017ddcb32c8e
     with:
       id: primitive-words
       dir: words
       binary-crate: words-kindle
       docs-licence-file: LICENSE-DOCS
-      sibling-tools-ref: main
+      sibling-tools-ref: 529e2cb1a038d2af631426821c5ed4d42a68850d
