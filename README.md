@@ -38,7 +38,9 @@ Copy the `words` and `documents` folders from the local ARMHF package to your Ki
 
 ## Status
 
-Desktop simulation and local ARMHF package checks passed on the Mac. Oasis 3 hardware verification is pending.
+Desktop simulation and local ARMHF package checks passed on the Mac.
+On an ARMHF Kindle Oasis 3 running firmware 5.18.2, Words switched from Daily to Free play, restored the
+original Daily puzzle, and returned to Launcher.
 [Device notes](docs/device-notes.md)
 
 ## Develop locally
