@@ -6,7 +6,7 @@ jobs:
   release:
     permissions:
       contents: write
-    uses: DoanNguyenTrong/kindle-primitive-build/.github/workflows/package.yml@9533d481058f4d67b29568f40b30017ddcb32c8e
+    uses: PrimitiveOS/kindle-primitive-build/.github/workflows/package.yml@6235c4d7327fbcfce74fc68ec06ae3c4f9c4665d
     with:
       id: primitive-words
       dir: words

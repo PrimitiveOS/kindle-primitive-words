@@ -7,7 +7,7 @@
   "developer": { "name": "Primitive AI" },
   "categories": ["games"],
   "description": "Play a daily five-letter puzzle or start a practice round.",
-  "repo": "https://github.com/DoanNguyenTrong/kindle-primitive-words",
+  "repo": "https://github.com/PrimitiveOS/kindle-primitive-words",
   "licence": "PolyForm-Noncommercial-1.0.0",
   "source": "hosted",
   "icon": "icon.png",
