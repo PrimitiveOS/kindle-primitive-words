@@ -2,16 +2,22 @@
 
 # Words
 
-**A five-letter word puzzle for Kindle e-readers.**
+**Five-letter puzzles for Kindle**
 
-[Install guide](INSTALL.md) · [Device notes](docs/device-notes.md) · [Changelog](CHANGELOG.md)
+[![Release](https://img.shields.io/github/v/release/PrimitiveOS/kindle-primitive-words?label=release)](https://github.com/PrimitiveOS/kindle-primitive-words/releases) [![Licence: PolyForm-Noncommercial-1.0.0](https://img.shields.io/badge/licence-PolyForm--Noncommercial--1.0.0-blue)](LICENSE) [![Store downloads](https://img.shields.io/badge/Store%20downloads-32-brightgreen)](https://primitiveos.github.io/kindle-primitive-catalog/v1/index.json)
+
+[**Download**](https://github.com/PrimitiveOS/kindle-primitive-words/releases/latest) · [**Install guide**](INSTALL.md) · [**Changelog**](CHANGELOG.md)
 
 </div>
 
 ---
 
-Guess a five-letter word in up to six attempts. Each guess marks exact matches, letters in another position, and
-letters absent from the answer. Play the daily puzzle or start a separate Free play round.
+Play a daily five-letter puzzle or start a practice round.
+
+## Quick start
+
+After setting up PrimitiveOS, open **Store** from Primitive Launcher. Choose **Words** under **Apps**,
+tap **Get**, and open it from the Launcher grid. The [install guide](INSTALL.md) also covers the standalone USB package.
 
 ## Screenshots
 
@@ -31,18 +37,6 @@ letters absent from the answer. Play the daily puzzle or start a separate Free p
 - The board and keyboard mark letters in black and white.
 - A word outside the guess bank leaves the draft and attempt count unchanged.
 
-## Quick start
-
-After setting up PrimitiveOS, open **Store** from Primitive Launcher. Choose **Words** under **Apps**,
-tap **Get**, and open it from the Launcher grid. The [install guide](INSTALL.md) also covers local USB testing.
-
-## Status
-
-Desktop simulation and local ARMHF package checks passed on the Mac.
-On an ARMHF Kindle Oasis 3 running firmware 5.18.2, Words switched from Daily to Free play, restored the
-original Daily puzzle, and returned to Launcher.
-[Device notes](docs/device-notes.md)
-
 ## Develop locally
 
 Keep `doannt-kindle-tools` and `doannt-kindle-launcher` next to this checkout. The desktop command writes daily puzzle
@@ -53,6 +47,23 @@ cargo test --offline --locked --workspace
 cargo run --offline --locked -p words-desktop -- build/previews
 ```
 
+## Status
+
+| Device | Status |
+|---|---|
+| Kindle Oasis 3 (1264 × 1680, firmware 5.18.2) | Tested on hardware |
+
+**Current version: 0.1.1.** Changes are in [CHANGELOG.md](CHANGELOG.md).
+
+## Downloads
+
+**32 downloads** from Store, as of 2026-11-21. Store shows the same count on the app page.
+The count is GitHub downloads of this app's release packages, from the [Store catalog](https://primitiveos.github.io/kindle-primitive-catalog/v1/index.json).
+
+## Documentation
+
+[Install guide](INSTALL.md) · [Changelog](CHANGELOG.md) · [Device notes](docs/device-notes.md)
+
 ## Licence
 
 Copyright (C) 2026 Doan Nguyen.
@@ -61,13 +72,3 @@ App code is licensed under PolyForm Noncommercial 1.0.0. [Code license](LICENSE)
 
 Original documentation and screenshots are licensed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0
 International (CC BY-NC-SA 4.0). [Documentation and image license](LICENSE-DOCS)
-
-## Word banks
-
-Words uses independently selected English answer and guess banks. The project’s original selection and arrangement
-of the bundled word banks is covered by [CC BY-NC-SA 4.0](LICENSE-DOCS) to the extent the project holds rights in it.
-
-KWordle credits both of its English
-lists to Sean Patlan, whose source repository describes them as copies of the original game's word lists and provides
-no dataset license. [KWordle credits](https://github.com/crizmo/KWordle/blob/a1f2a255ec6a69f7f916dc4e0aa382fbb7f8f742/README.md#credits),
-[English list source](https://github.com/seanpatlan/wordle-words).
