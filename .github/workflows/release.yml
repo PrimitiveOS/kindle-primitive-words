@@ -12,4 +12,4 @@ jobs:
       dir: words
       binary-crate: words-kindle
       docs-licence-file: LICENSE-DOCS
-      sibling-tools-ref: 529e2cb1a038d2af631426821c5ed4d42a68850d
+      sibling-tools-ref: 779145c93a65b2fb8c104485af6489a8ef565de6
