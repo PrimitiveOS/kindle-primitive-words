@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="icon.png" alt="Words icon" width="110">
+
 # Words
 
 **Five-letter puzzles for Kindle**
@@ -11,7 +13,9 @@
 [![Stars](https://img.shields.io/github/stars/PrimitiveOS/kindle-primitive-words?style=social)](https://github.com/PrimitiveOS/kindle-primitive-words/stargazers)
 [![Store downloads](https://img.shields.io/endpoint?url=https%3A%2F%2Fprimitiveos.github.io%2Fkindle-primitive-catalog%2Fv1%2Fbadges%2Fprimitive-words.json)](https://primitiveos.github.io/kindle-primitive-catalog/v1/index.json)
 
-[**Download**](https://github.com/PrimitiveOS/kindle-primitive-words/releases/latest) · [**Install guide**](INSTALL.md) · [**Changelog**](CHANGELOG.md)
+[**Download**](https://github.com/PrimitiveOS/kindle-primitive-words/releases/latest) ·
+[**Install guide**](INSTALL.md) ·
+[**Changelog**](CHANGELOG.md)
 
 </div>
 
