@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Unit tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+      - name: Check out the native app kit
+        uses: actions/checkout@v5
+        with:
+          repository: PrimitiveOS/kindle-primtitive-tools
+          ref: 779145c93a65b2fb8c104485af6489a8ef565de6
+          path: .tools-source
+          persist-credentials: false
+      - name: Make the app kit available as a sibling folder
+        run: ln -sT "$GITHUB_WORKSPACE/.tools-source" "$GITHUB_WORKSPACE/../doannt-kindle-tools"
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+      - name: Unit tests
+        run: cargo test --workspace --locked
