@@ -4,7 +4,12 @@
 
 **Five-letter puzzles for Kindle**
 
-[![Release](https://img.shields.io/github/v/release/PrimitiveOS/kindle-primitive-words?label=release)](https://github.com/PrimitiveOS/kindle-primitive-words/releases) [![Licence: PolyForm-Noncommercial-1.0.0](https://img.shields.io/badge/licence-PolyForm--Noncommercial--1.0.0-blue)](LICENSE) [![Store downloads](https://img.shields.io/endpoint?url=https%3A%2F%2Fprimitiveos.github.io%2Fkindle-primitive-catalog%2Fv1%2Fbadges%2Fprimitive-words.json)](https://primitiveos.github.io/kindle-primitive-catalog/v1/index.json)
+[![CI](https://img.shields.io/github/actions/workflow/status/PrimitiveOS/kindle-primitive-words/ci.yml?branch=main&label=CI)](https://github.com/PrimitiveOS/kindle-primitive-words/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/PrimitiveOS/kindle-primitive-words?label=release)](https://github.com/PrimitiveOS/kindle-primitive-words/releases)
+[![Tag](https://img.shields.io/github/v/tag/PrimitiveOS/kindle-primitive-words?label=tag)](https://github.com/PrimitiveOS/kindle-primitive-words/tags)
+[![Licence: PolyForm-Noncommercial-1.0.0](https://img.shields.io/badge/licence-PolyForm--Noncommercial--1.0.0-blue)](LICENSE)
+[![Stars](https://img.shields.io/github/stars/PrimitiveOS/kindle-primitive-words?style=social)](https://github.com/PrimitiveOS/kindle-primitive-words/stargazers)
+[![Store downloads](https://img.shields.io/endpoint?url=https%3A%2F%2Fprimitiveos.github.io%2Fkindle-primitive-catalog%2Fv1%2Fbadges%2Fprimitive-words.json)](https://primitiveos.github.io/kindle-primitive-catalog/v1/index.json)
 
 [**Download**](https://github.com/PrimitiveOS/kindle-primitive-words/releases/latest) · [**Install guide**](INSTALL.md) · [**Changelog**](CHANGELOG.md)
 
